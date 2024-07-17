@@ -1,0 +1,32 @@
+.contactContainer{
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, tomato, #3027ae);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+.contactCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: auto;
+    min-width: 50vmax;
+    min-height: 50vmin;
+    /* background-color: white; */
+    background-image: linear-gradient(to right, tomato, #3027ae);
+    box-shadow: 0 0 20px black;
+    position: absolute;
+    color: white;
+    font: 300 3vmax "Roboto";
+}
+.contactCard > a{
+    text-decoration: none;
+    color: white;
+    font: 300 3vmax "Roboto";
+}

@@ -1,0 +1,67 @@
+.aboutContainer{
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, tomato, #3027ae);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+.aboutCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5vmax;
+    min-width: 50vmax;
+    min-height: 50vmin;
+    /* background-color: white; */
+    background-image: linear-gradient(to right, tomato, #3027ae);
+    box-shadow: 0 0 20px black;
+    position: absolute;
+    color: white;
+    font: 200 2vmax "Roboto";
+}
+.aboutCard > a{
+    text-decoration: none;
+    color: white;
+    font: 300 3vmax "Roboto";
+}
+.myDetails{
+    padding: 2vmax;
+    width: 100%;
+    max-width: 60vmax;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+}
+.myDetails > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: 100 1vmax "Roboto";
+    color: white;
+    width: 50%;
+    height: 100%;
+    word-break: break-word;
+}
+.myDetails > div > a{
+    text-align: center;
+    width: 100%;
+}
+.myDetails > div > img{
+    width: 30%;
+}
+.myDetails > div > a > img{
+    width: 20%;
+}
+.myDetails > div > p{
+    text-align: center;
+}
+.myDetails > div:last-child{
+    border-left: 2px solid rgba(0,0,0,0.3);
+}

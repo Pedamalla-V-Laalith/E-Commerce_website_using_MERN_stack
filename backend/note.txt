@@ -1,0 +1,5 @@
+remove the email and password in sendMail,
+remove mongodb url 
+remove cloudinary details from server.js
+remove default cloudinary file locations from user controller
+remove stripe details from payment controller

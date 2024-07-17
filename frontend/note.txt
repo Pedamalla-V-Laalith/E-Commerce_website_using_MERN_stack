@@ -1,0 +1,2 @@
+stripe demo cards:- https://docs.stripe.com/testing
+stripe api keys:- https://dashboard.stripe.com/test/apikeys

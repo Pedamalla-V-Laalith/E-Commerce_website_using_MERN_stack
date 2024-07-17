@@ -1,0 +1,235 @@
+.loadingScreen
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LoginSignupContainer
+{
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231,231,231);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+.LoginSignupBox
+{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    border-radius: 10px;
+    width: 25vw;
+    height: 70vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* we did overflow hidden because when we swap between login and signup
+    the login form or signup form moves sideways in this box and stays hidden */
+}
+.login_signup_toggle
+{
+    display: flex;
+    height: 3vmax;
+}
+.login_signup_toggle > p
+{
+    color: rgba(0,0,0,0.7);
+    font: 300 1vmax "Roboto";
+    display: grid;
+    place-items: center;
+    width: 100%;
+    transition: all 0.5s;
+}
+.login_signup_toggle > p:hover
+{
+    color: tomato;
+}
+.LoginSignupBox > div > button
+{
+    background-color: tomato;
+    height: 3px;
+    width: 50%;
+    border: none;
+    transition: all 0.5s;
+}
+.loginForm, .signupForm
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 2vmax;
+    height: 70%;
+    transition: all 0.5s;
+}
+.signupForm
+{
+    transform: translateY(-100%) translateX(-500%);
+}
+.loginForm > div, .signupForm > div
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.loginForm > div > input, .signupForm > div > input
+{
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.27);
+    border-radius: 4px;
+    font: 300 0.9vmax cursive;
+    outline: none;
+}
+.loginForm > div > svg, .signupForm > div > svg
+{
+    /* these are icon selectors */
+    position: absolute;
+    transform: translate(1vmax);
+    font-size: 1.6vmax;
+    color: rgba(0,0,0,0.5);
+}
+.loginForm > a
+{
+    /* this is a selector for the Link component in the loginForm */
+    color: rgb(0,0,0);
+    text-decoration: none;
+    align-self: flex-end;
+    transition: all 0.5s;
+    font : 500 1vmax "Gill Sans";
+}
+.loginForm > a:hover
+{
+    color: tomato;
+}
+.registerImage > img
+{
+    width: 3vmax;
+    height: 3vmax;
+    border-radius: 100%;
+}
+.imageupload
+{
+    display: flex;
+    padding: 0vmax;
+}
+.registerImage > div > input::-webkit-file-upload-button
+{
+    /* this is basically a selector for imageupload's button itself */
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 5vh;
+    margin: 0%;
+    border-radius: 5px;
+    font: 400 0.8vmax cursive;
+    transition: all 0.5s;
+    padding: 0 1vmax;
+    color: rgba(0,0,0,1);
+    background-color: white;
+}
+.registerImage > div > input::-webkit-file-upload-button:hover
+{
+    background-color: tomato;
+    color: white;
+}
+.loginBtn, .signupBtn
+{
+    border: none;
+    background-color: tomato;
+    color: white;
+    font: 300 0.9vmax "Roboto";
+    width: 100%;
+    padding: 0.8vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.27);
+}
+.loginBtn:hover, .signupBtn:hover
+{
+    background-color: rgb(214,84,61);
+    transform: scale(1.1);
+}
+
+.shiftToLeft
+{
+    transform: translateX(-500%);
+}
+.shiftToNeutral
+{
+    transform: translateX(0%);
+}
+.shiftToNeutralForm
+{
+    transform: translateX(0%) translateY(-100%);
+}
+.shiftToRight
+{
+    transform: translateX(100%);
+}
+
+
+
+
+@media screen and (max-width : 600px){
+    .LoginSignupContainer
+    {
+        background-color: white;
+    }
+    .LoginSignupBox
+    {
+        width : 100vw;
+        height: 95vh;
+    }
+    .login_signup_toggle
+    {
+        height: 5vmax;
+    }
+    .login_signup_toggle > p 
+    {
+        font: 300 1.5vmax "Roboto";
+    }
+    .loginForm, .signupForm
+    {
+        padding: 5vmax;
+    }
+    .loginForm > div > input, .signupForm > div > input
+    {
+        padding: 2.5vmax 5vmax;
+        font: 300 1.7vmax cursive;
+    }
+    .loginForm > div > svg, .signupForm > div > svg
+    {
+        font-size: 2.8vmax;
+    }
+    .loginForm > a 
+    {
+        font: 500 1.8vmax "Gill Sans";
+    }
+    .registerImage > img 
+    {
+        width: 8vmax;
+        border-radius: 100%;
+    }
+    .registerImage > div > input::-webkit-file-upload-button
+    {
+        height: 7vh;
+        font: 400 1.8vmax cursive;
+    }
+    .loginBtn, .signupBtn
+    {
+        font: 300 1.9vmax "Roboto";
+        padding: 1.8vmax;
+    }
+}
